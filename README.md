@@ -7,8 +7,8 @@ This is a simple vehicle API project with a CRUD. Applying the concept of integr
 
 ### Technologies:
 
-Java 17
-Maven
-Spring Boot
-h2
-REST-assured
+- Java 17
+- Maven
+- Spring Boot
+- h2
+- REST-assured
