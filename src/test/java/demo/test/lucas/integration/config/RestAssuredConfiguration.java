@@ -10,7 +10,7 @@ import org.apache.commons.lang3.SystemProperties;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.web.server.LocalServerPort;
 
-@SpringBootTest(classes = { ApiApplication.class }, webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
+@SpringBootTest(classes = { ApiApplication.class }, webEnvironment = SpringBootTest.WebEnvironment.DEFINED_PORT)
 public abstract class RestAssuredConfiguration {
 
     @LocalServerPort
