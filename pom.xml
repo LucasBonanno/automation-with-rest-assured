@@ -93,16 +93,26 @@
                     </excludes>
                 </configuration>
             </plugin>
+
             <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-failsafe-plugin</artifactId>
-                <version>3.0.0-M6</version>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.1.2</version>
                 <configuration>
                     <includes>
-                        <include>src/test/java/demo/test/lucas/integration/TestSuite.java</include>
+                        <include>**/TestSuite.java</include>
                     </includes>
                 </configuration>
             </plugin>
+            <!--            <plugin>-->
+            <!--                <groupId>org.apache.maven.plugins</groupId>-->
+            <!--                <artifactId>maven-failsafe-plugin</artifactId>-->
+            <!--                <version>3.0.0-M6</version>-->
+            <!--                <configuration>-->
+            <!--                    <includes>-->
+            <!--                        <include>src/test/java/demo/test/lucas/integration/TestSuite.java</include>-->
+            <!--                    </includes>-->
+            <!--                </configuration>-->
+            <!--            </plugin>-->
         </plugins>
     </build>
 </project>
