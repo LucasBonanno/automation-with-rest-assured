@@ -25,4 +25,4 @@ jobs:
       - name: Build & Install
         run: mvn -B package --file pom.xml -D skipTests --no-transfer-progress
       - name: Run Tests
-        run: mvn test
+        run: mvn test -B package --file pom.xml
